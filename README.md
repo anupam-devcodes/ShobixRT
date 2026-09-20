@@ -228,4 +228,11 @@ The completed project should demonstrate:
 8. A deliberate fault with captured register information.
 9. The same kernel architecture running on STM32F411 hardware.
 
-Do not begin Stage 1 until explicitly instructed with: `Start Stage 1.`
+## Roadmap status
+
+- Stage 0 - Environment and project structure: Complete
+- Stage 1 - Bare-metal ARM hello world: Complete
+- Stage 2 onward: Not started
+
+Stage 1 is complete. Do not begin Stage 2 until explicitly instructed with:
+`Start Stage 2.`
