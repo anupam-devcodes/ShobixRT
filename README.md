@@ -232,7 +232,10 @@ The completed project should demonstrate:
 
 - Stage 0 - Environment and project structure: Complete
 - Stage 1 - Bare-metal ARM hello world: Complete
-- Stage 2 onward: Not started
+- Stage 2 - UART output: In progress; runtime validation requires the documented GNU Arm toolchain and QEMU
+- Stage 3 onward: Not started
 
-Stage 1 is complete. Do not begin Stage 2 until explicitly instructed with:
-`Start Stage 2.`
+See `docs/stages/Stage-02-UART-Driver.md` for the QEMU CMSDK UART design,
+commands, and validation record. The repository's current `.gitignore` excludes
+`/docs/`, so that local stage note must be force-added deliberately if it should
+be versioned.
