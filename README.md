@@ -233,7 +233,8 @@ The completed project should demonstrate:
 - Stage 0 - Environment and project structure: Complete
 - Stage 1 - Bare-metal ARM hello world: Complete
 - Stage 2 - UART output: In progress; runtime validation requires the documented GNU Arm toolchain and QEMU
-- Stage 3 onward: Not started
+- Stage 3 - SysTick and interrupts: In progress; basic 1 kHz SysTick support added
+- Stage 4 onward: Not started
 
 See `docs/stages/Stage-02-UART-Driver.md` for the QEMU CMSDK UART design,
 commands, and validation record. The repository's current `.gitignore` excludes

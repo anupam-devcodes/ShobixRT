@@ -7,12 +7,13 @@ QEMU := qemu-system-arm
 CFLAGS := -mcpu=cortex-m4 -mthumb -O0 -g3 \
            -ffreestanding -fno-builtin -ffunction-sections \
            -fdata-sections -Wall -Wextra
-CPPFLAGS := -Idrivers -Iplatform/qemu
+CPPFLAGS := -Idrivers -Iplatform/qemu -Iarch/cortex_m
 LDFLAGS := -T linker/qemu.ld -nostdlib \
            -Wl,--gc-sections -Wl,--build-id=none \
            -Wl,-Map=$(TARGET).map
 
 C_SOURCES := apps/main.c \
+             arch/cortex_m/systick.c \
              drivers/console.c \
              platform/qemu/uart.c
 ASM_SOURCES := arch/cortex_m/startup.s
