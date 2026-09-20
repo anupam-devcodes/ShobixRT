@@ -1,9 +1,16 @@
+#include "console.h"
+#include "uart.h"
+
 int main(void)
 {
-    volatile unsigned int marker = 0x12345678u;
+    uart_init();
+
+    console_write("ShobixRT booting...\n");
+    console_write("UART initialized.\n");
+    console_write("Stage 2: UART output working.\n");
 
     while (1)
     {
-        marker++;
+        __asm volatile ("wfi");
     }
 }
