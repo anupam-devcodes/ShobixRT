@@ -12,6 +12,7 @@
 .extern _sbss
 .extern _ebss
 .extern main
+.extern SysTick_Handler
 
 .section .isr_vector,"a",%progbits
 .align 7
@@ -31,7 +32,7 @@ vector_table:
     .word Default_Handler
     .word 0
     .word Default_Handler
-    .word Default_Handler
+    .word SysTick_Handler
 
 .section .text.Reset_Handler,"ax",%progbits
 .thumb_func
