@@ -4,4 +4,4 @@
 void uart_init(void);
 void uart_putc(char character);
 
-#endif /* SHOBIXRT_PLATFORM_QEMU_UART_H */
+#endif

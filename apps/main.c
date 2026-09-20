@@ -9,7 +9,6 @@ int main(void)
     console_write("UART initialized.\n");
     console_write("Stage 2: UART output working.\n");
 
-    /* Stage 2 has no scheduler yet, so stay in a quiet idle loop. */
     while (1)
     {
         __asm volatile ("wfi");

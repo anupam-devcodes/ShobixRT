@@ -11,7 +11,6 @@ void console_write(const char *text)
 
     while (*text != '\0')
     {
-        /* Newline conversion belongs here, so callers always use '\n'. */
         if (*text == '\n')
         {
             uart_putc('\r');
